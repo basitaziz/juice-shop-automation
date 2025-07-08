@@ -1,0 +1,9 @@
+pages\ProductPage.class
+pages\LoginPage.class
+stepdefinitions\AddToCartSteps.class
+stepdefinitions\Hooks.class
+pages\HomePage.class
+stepdefinitions\CommonSteps.class
+stepdefinitions\UserRegistrationSteps.class
+runners\TestRunner.class
+stepdefinitions\UserLoginSteps.class
