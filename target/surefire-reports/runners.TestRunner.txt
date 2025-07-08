@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.653 s - in runners.TestRunner
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.394 s <<< FAILURE! - in runners.TestRunner
+Add Products to Cart.Add a product to the cart  Time elapsed: 28.097 s  <<< FAILURE!
+java.lang.AssertionError
+	at stepdefinitions.AddToCartSteps.validateCart(AddToCartSteps.java:24)
+	at ✽.the cart should show the product(file:///C:/Users/Basit%20Aziz/Downloads/juice-shop-automation/juice-shop-automation/src/test/resources/features/add_to_cart.feature:7)
+
