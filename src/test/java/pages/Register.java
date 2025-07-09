@@ -40,6 +40,7 @@ public class Register {
         driver.findElement(pass).sendKeys(password);
         WebElement checkbox = driver.findElement(checkBox);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkbox);
+        wait.until(ExpectedConditions.elementToBeClickable(submit));
         driver.findElement(submit).click();
 
     }

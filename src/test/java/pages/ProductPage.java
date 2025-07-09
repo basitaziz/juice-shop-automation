@@ -33,7 +33,7 @@ public class ProductPage {
         }
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait until the element is *visible*, not just present
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
+        wait.until(ExpectedConditions.elementToBeClickable(
             Register
         ));
         driver.findElement(Register).click();
