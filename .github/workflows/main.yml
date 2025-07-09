@@ -1,17 +1,17 @@
-name: Run Juice Shop UI Tests
+name: Run Juice Shop UI Tests on Windows
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow_dispatch:    # ✅ Manual trigger
+  workflow_dispatch:          # ✅ manual trigger
   schedule:
-    - cron: '0 0 * * *' # ✅ Daily at midnight UTC
+    - cron: '0 0 * * *'       # ✅ daily at midnight UTC
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest   # ✅ switched to Windows
 
     steps:
     - name: Checkout code
@@ -25,6 +25,9 @@ jobs:
 
     - name: Set up Chrome
       uses: browser-actions/setup-chrome@v1
+
+    - name: Add Chrome to PATH
+      run: echo "C:\Program Files\Google\Chrome\Application" >> $GITHUB_PATH
 
     - name: Run tests with Maven
       run: mvn clean test
