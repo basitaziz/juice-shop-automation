@@ -27,7 +27,7 @@ public class ProductPage {
     public void addFirstProductToCart() {
         
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notification-container")));
+        //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notification-container")));
         // Wait until the element is *visible*, not just present
         wait.until(ExpectedConditions.elementToBeClickable(
             Register

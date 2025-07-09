@@ -27,7 +27,7 @@ public class Register {
 
     public void register(String email, String password, String firstName, String lastName){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(mail));
+        wait.until(ExpectedConditions.elementToBeClickable(mail));
         driver.findElement(mail).sendKeys(email);
         WebElement element = driver.findElement(checkBox);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
