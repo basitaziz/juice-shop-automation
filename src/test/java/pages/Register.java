@@ -26,6 +26,12 @@ public class Register {
     }
 
     public void register(String email, String password, String firstName, String lastName){
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(mail));
         driver.findElement(mail).sendKeys(email);
