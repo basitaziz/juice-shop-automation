@@ -45,13 +45,13 @@ public class LoginPage {
         driver.findElement(email).sendKeys(mail);
         driver.findElement(password).sendKeys(passcode);
         driver.findElement(login).click();
-        //try{
+        try{
             wait.until(ExpectedConditions.elementToBeClickable(skip));
             driver.findElement(skip).click();
 
-        // }catch(Exception e){
+        }catch(Exception e){
 
-        // }
+        }
 
 
     }
