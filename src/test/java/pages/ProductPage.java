@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ProductPage {
     WebDriver driver;
 
-    By Register = By.xpath("//span[text()='Register Now']");
+    By Register = By.xpath("//*[text()='Register Now']");
     By Quantity = By.xpath("//tr[@data-id=\"342561\"]//td[@class=\"ticket-quantity\"]//select");
     By fname = By.xpath("//label[text()='First Name *']");
 
@@ -25,12 +25,7 @@ public class ProductPage {
     }
 
     public void addFirstProductToCart() {
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notification-container")));
         // Wait until the element is *visible*, not just present
