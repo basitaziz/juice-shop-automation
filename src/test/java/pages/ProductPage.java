@@ -25,7 +25,12 @@ public class ProductPage {
     }
 
     public void addFirstProductToCart() {
-        
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notification-container")));
         // Wait until the element is *visible*, not just present
@@ -36,6 +41,13 @@ public class ProductPage {
     }
 
     public void isCartUpdated() {
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
         // 1. Get all window handles
         Set<String> windowHandles = driver.getWindowHandles();

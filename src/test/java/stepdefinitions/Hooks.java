@@ -15,10 +15,10 @@ public class Hooks {
         // Don't open URL here — let CommonSteps handle that
     }
 
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+    // @After
+    // public void tearDown() {
+    //     if (driver != null) {
+    //         driver.quit();
+    //     }
+    // }
 }

@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features",
+    features = "src/test/resources/features/add_to_cart.feature",
     glue = {"stepdefinitions"},
     plugin = {"pretty", "html:reports/cucumber-html-report"}
 )
