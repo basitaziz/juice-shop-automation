@@ -24,7 +24,8 @@ public class ProductPage {
         this.driver = driver;
     }
 
-    public void addFirstProductToCart() {
+    public void addFirstProductToCart() throws InterruptedException {
+        Thread.sleep(5000);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait until the element is *visible*, not just present
         wait.until(ExpectedConditions.visibilityOfElementLocated(
