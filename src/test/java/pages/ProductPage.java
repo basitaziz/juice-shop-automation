@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ProductPage {
     WebDriver driver;
 
-    By Register = By.xpath("//*[text()='Register Now']");
+    By Register = By.xpath("//span[text()='Register Now']");
     By Quantity = By.xpath("//tr[@data-id=\"342561\"]//td[@class=\"ticket-quantity\"]//select");
     By fname = By.xpath("//label[text()='First Name *']");
 
