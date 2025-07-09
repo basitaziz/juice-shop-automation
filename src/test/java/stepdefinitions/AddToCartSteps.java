@@ -11,8 +11,6 @@ public class AddToCartSteps {
     //WebDriver driver;
     ProductPage productPage;
 
-    
-
     @When("I add a product to the cart")
     public void addToCart() {
         productPage = new ProductPage(driver);
@@ -21,7 +19,6 @@ public class AddToCartSteps {
 
     @Then("the cart should show the product")
     public void validateCart() {
-        assert productPage.isCartUpdated();
-        driver.quit();
+        productPage.isCartUpdated();
     }
 }

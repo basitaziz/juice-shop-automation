@@ -3,7 +3,8 @@ pages\LoginPage.class
 stepdefinitions\AddToCartSteps.class
 stepdefinitions\Hooks.class
 pages\HomePage.class
+runners\TestRunner.class
 stepdefinitions\CommonSteps.class
 stepdefinitions\UserRegistrationSteps.class
-runners\TestRunner.class
+pages\Register.class
 stepdefinitions\UserLoginSteps.class

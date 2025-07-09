@@ -2,28 +2,19 @@ package stepdefinitions;
 
 import io.cucumber.java.en.*;
 import pages.LoginPage;
-
-import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebDriver;
 import static stepdefinitions.Hooks.driver;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 
 public class CommonSteps {
-    LoginPage loginPage = new LoginPage(driver);    
+    LoginPage loginPage = new LoginPage(driver);
+    WebDriver wait;
+
 
     @Given("I open the Juice Shop application")
     public void openJuiceShop() {
-        driver.get("https://juice-shop.herokuapp.com");
-
-        try {
-            Thread.sleep(1000);
-            driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        } catch (Exception e) {
-            System.out.println("No welcome modal or already dismissed.");
-        }
+        driver.get("https://owasp.org/www-project-juice-shop/");
+        
     }
 
     @When("I navigate to the login page")
@@ -34,22 +25,15 @@ public class CommonSteps {
 
     @And("I login with valid credentials")
     public void login() {
-        driver.findElement(By.id("navbarAccount")).click();
-        driver.findElement(By.id("navbarLoginButton")).click();
-        driver.findElement(By.id("email")).sendKeys("demo@juice.com");
-        driver.findElement(By.id("password")).sendKeys("demo123");
-        driver.findElement(By.id("loginButton")).click();
+        
+        loginPage.login("basitaziz090@gmail.com","A12345@67b");
 
-        try {
-    Robot robot = new Robot();
-    Thread.sleep(1000);
-    robot.keyPress(KeyEvent.VK_ENTER);
-    robot.keyRelease(KeyEvent.VK_ENTER);
-} catch (AWTException e) {
-    e.printStackTrace();
-} catch (InterruptedException e) {
-    e.printStackTrace();
-}
+    }
+
+    @And("I login with Invalid credentials")
+    public void invalidLogin() {
+        
+        loginPage.login("basitaziz090@gmail.com","A12345@6");
 
     }
 }

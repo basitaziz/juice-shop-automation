@@ -1,9 +1,10 @@
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\pages\HomePage.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\pages\LoginPage.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\pages\ProductPage.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\runners\TestRunner.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\stepdefinitions\AddToCartSteps.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\stepdefinitions\CommonSteps.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\stepdefinitions\Hooks.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\stepdefinitions\UserLoginSteps.java
-C:\Users\Basit Aziz\Downloads\juice-shop-automation\juice-shop-automation\src\test\java\stepdefinitions\UserRegistrationSteps.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\pages\HomePage.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\pages\LoginPage.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\pages\ProductPage.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\pages\Register.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\runners\TestRunner.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\stepdefinitions\AddToCartSteps.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\stepdefinitions\CommonSteps.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\stepdefinitions\Hooks.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\stepdefinitions\UserLoginSteps.java
+C:\Users\Basit Aziz\Downloads\Smart Cube\juice-shop-automation\src\test\java\stepdefinitions\UserRegistrationSteps.java

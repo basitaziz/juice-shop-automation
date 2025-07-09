@@ -11,6 +11,9 @@ import java.time.Duration;
 public class HomePage {
     WebDriver driver;
 
+    By home = By.xpath("//h1[text()='Home']");
+    By error = By.xpath("//h1[text()='Invalid Credentials']");
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -19,9 +22,18 @@ public class HomePage {
         try {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait until the element is *visible*, not just present
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//span[text()=' Your Basket']")
-        ));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(home));
+        return true;
+    } catch (Exception e) {
+        return false;
+    }
+    }
+
+    public boolean notLoggedIn() {
+        try {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Wait until the element is *visible*, not just present
+        wait.until(ExpectedConditions.visibilityOfElementLocated(error));
         return true;
     } catch (Exception e) {
         return false;
